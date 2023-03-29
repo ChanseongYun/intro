@@ -1,0 +1,42 @@
+/* *: 전체 및 공용 선택자
+    태그 선택자 : hi, p, li, ul, ...
+    클래스 선택자 : 클래스명(ex. .naver, .daum, .menu)
+    <hi class="naver">...</h1>
+    아이디 선택자 : #아이디명(ex. #info 또는 #box...)
+    - <p id="info">....</p>
+    그룹 선택자 : 여러가지 선택자를 나열하고 콤마로 구분
+    p, h1, .naver, #info { fonz-size:20px;}*/
+* { 
+    color : orange;
+}
+/* 2. 태그 선택자 :  1개가 아닌 모두~ */
+P {
+    background-color: olive;
+    color:white;
+}
+
+/* 3. 클래스 선택자 : 여러번 반복, 재사용 */
+.myClass {
+    padding: 15px, 20px; /* 여백 */
+}
+.border {
+    border: 1px solid #222; /* 테두리 선*/
+}
+/* 4. 아이디 선택자 : 문서 내에서 한번만 사용 */
+#body {
+    background-color: #F4AAAA;
+}
+#wrap {
+   background-color: white; 
+   border: 1px dotted #555;
+   padding : 10px 20px;
+   margin : 100px;
+}
+
+
+/* 5.그룹 선택자 : */
+p, h2, .border {
+    border-width: 3px; /* 선두께*/
+    border-style: dashed;/* 선종류 */
+    margin: 15px; /*바깥 여백*/
+}
